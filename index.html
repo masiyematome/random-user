@@ -1,14 +1,66 @@
 <!DOCTYPE html>
 
-<html lang = "en">
-    <head>
-        <title>Random User App</title>
-        <meta charset = "UTF-8">
-        <meta name = "viewport" content = "width = device-width , initial-scale = 1.0">
-    </head>
+<html lang="en">
 
-    <body>
-        <main></main>
-    </body>
-    
+<head>
+    <title>Random User App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width , initial-scale = 1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main>
+
+        <div class="user-container">
+
+            <div class="user-image">
+                <img src="pics/cyrilRamaphosa.jpg" alt="a picture of Cyril Ramaphosa">
+            </div>
+
+            <div class="user-credentials">
+                <span class="name-span">
+                    <i class="fa fa-user"></i>
+                    <p class="name-text">Name : </p>
+                </span>
+
+                <span class = "last-name-span">
+                    <i class = "fa fa-user-circle"></i>
+                    <p class = "last-name-text">Last Name : </p>
+                </span>
+
+                <span class = "location-span">
+                    <i class = "fa fa-search-location"></i>
+                    <p class = "location-text">Location : </p>
+                </span>
+
+                <span class = "phone-span">
+                    <i class = "fa fa-search"></i>
+                    <p class = "phone-text">Phone : </p>
+                </span>
+
+                <span class = "email-span">
+                    <i class = "fa fa-envelope"></i>
+                    <p class = "email-text">Email : </p>
+                </span>
+
+            </div>
+
+
+            <div class="button-area">
+                <button type = "submit" class = "generate-user-button">Generate User</button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+
 </html>
