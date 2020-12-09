@@ -10,12 +10,18 @@
     margin : auto;
     position : relative;
     top : 50px;
-    border : 1px solid teal;
+    border : 1.5px solid rgb(230, 230, 230);
+    border-radius: 10px;
+}
+
+.user-image{
+    border-radius: 10px 10px 0px 0px;
 }
 
 .user-image img{
     width : 100%;
     height : auto;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .user-credentials{
@@ -32,6 +38,7 @@
 
 .user-credentials .fa{
     padding : 5px;
+    color : #007cb9;
 }
 
 .button-area{
@@ -40,4 +47,19 @@
     border-top : 1px solid gray;
     padding : 8px 0px 15px;
     background-color : rgb(243, 243, 243);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.button-area button{
+    padding : 8px;
+    border : none;
+    outline : none;
+    background-color : #007cb9;
+    color : white;
+    font-weight : 600;
+    cursor: pointer;
+}
+
+.button-area button:hover{
+    transform: scale(1.05);
 }
