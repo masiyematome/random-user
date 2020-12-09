@@ -1,5 +1,6 @@
 //Selectors
 const generateUserButton = document.querySelector(".generate-user-button");
+const userImage = document.querySelector(".image");
 const nameText = document.querySelector(".name-text");
 const lastNameText = document.querySelector(".last-name-text");
 const locationText = document.querySelector(".location-text");
@@ -14,11 +15,15 @@ generateUserButton.addEventListener("click",getRandomUser);
 
 //Functions
 
-function generateRandomUser(usersObject){
+function generateRandomUser(usersObject,min,max){
+    const randomIndex = Math.floor(Math.random() * (max - min + 1)) + min;
 
 }
 
-function getRandomUser(theObject){
+function getRandomUser(theObject,theMin,theMax){
+    theMin = 0;
+    theMax = 5;
+
      theObject = [
          {
              userName: "Cyril",
@@ -26,6 +31,7 @@ function getRandomUser(theObject){
              userLocation: "Joburg",
              userPhone: "0825886985",
              userEmail: "cyril.ramaphosa@gmail.com",
+             userImage: "pics/cyrilRamaphosa",
          },
 
          {
@@ -37,6 +43,6 @@ function getRandomUser(theObject){
          },
      ];
 
-     generateRandomUser(theObject);
+     generateRandomUser(theObject,theMin,theMax);
 
 }
