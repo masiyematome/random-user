@@ -8,6 +8,7 @@
 .user-container{
     width : 40%;
     margin : auto;
+    height : 500px;
     position : relative;
     top : 50px;
     border : 1.5px solid rgb(230, 230, 230);
@@ -20,7 +21,7 @@
 
 .user-image img{
     width : 100%;
-    height : auto;
+    height : 280px;
     border-radius: 10px 10px 0px 0px;
 }
 
